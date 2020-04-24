@@ -1,4 +1,3 @@
-
 # Introduction
 
 Aujourd'hui vous allez découvrir le Javascript.
