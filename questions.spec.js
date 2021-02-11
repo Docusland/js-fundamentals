@@ -1,65 +1,70 @@
 'use strict';
 
 describe('Les chaines de caractères : ', function () {
-
+    //Fait
     it('Donner la taille de la chaine de caractères', function () {
         var result = tailleString('Ce texte à une certaine taille');
         expect(result).toEqual(30);
     });
-
+    //Fait
     it('Remplacer le premier e de la chaine par un espace', function () {
         var result = remplaceCar('Ce texte à une certaine taille','e', ' ');
         expect(result).toEqual('C  texte à une certaine taille');
     });
-
+    //Fait
     it('Concatener les deux chaines de caractères', function () {
         var result = concatString('Le javascript est ', 'super');
         expect(result).toEqual('Le javascript est super');
     });
-
+    //Fait
     it('Afficher le cinquième caractère de la chaine', function () {
         var result = afficherCar('Ces exercices sont super!', 5);
         expect(result).toEqual('e');
     });
-
+    //Fait
     it('Afficher les 9 premiers caractères', function () {
         var result = afficherNCar('Je dirait même qu\'ils sont excellent',9);
         expect(result).toEqual('Je dirait');
     });
-
+    //Fait
     it('Mettre en majuscule la chaine', function () {
         var result = majusculeString('Un autre excellent exercice');
         expect(result).toEqual('UN AUTRE EXCELLENT EXERCICE');
     });
-
+    //Fait
     it('Supprimer les espaces avant et après la chaine', function () {
         var result = SupprEspaceString(' Rome ne s\'est pas construite en un jour ');
         expect(result).toEqual('Rome ne s\'est pas construite en un jour');
     });
+    //Fait
     it('Afficher true si le parametre d\'entrée de la fonction est de type string', function () {
         var result = IsString('Est ce une chaine de caractères ?');
         expect(result).toEqual(true);
     });
+    //Fait
     it('Afficher l\'extension du fichier', function () {
         var result = AfficherExtensionString('images/photo01.jpg');
         expect(result).toEqual('jpg');
     });
+    //Fait
     it('Compter le nombre d\'espace dans la chaine', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
+    //Fait
     it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
     });
+    //Fait
     it('Mettre en minuscule la chaine', function () {
         var result = minusculeString('Celui ci aussi!');
         expect(result).toEqual('celui ci aussi!');
     });
+
     it('Comptez le nombre de caractères différents dans la chaine', function(){
         var result = countDistinctCar('La maison de carole a vue sur le parc du Thabor');
         expect(result).toEqual(19);
-
     });
 })
 describe('Les nombres et opérations mathématiques : ', function () {
