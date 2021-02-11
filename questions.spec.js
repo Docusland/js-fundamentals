@@ -59,7 +59,6 @@ describe('Les chaines de caractères : ', function () {
     it('Comptez le nombre de caractères différents dans la chaine', function(){
         var result = countDistinctCar('La maison de carole a vue sur le parc du Thabor');
         expect(result).toEqual(19);
-
     });
 })
 describe('Les nombres et opérations mathématiques : ', function () {
