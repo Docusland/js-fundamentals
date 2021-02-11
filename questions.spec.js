@@ -5,7 +5,7 @@ describe('Les chaines de caractères : ', function () {
     it('Donner la taille de la chaine de caractères', function () {
         var result = tailleString('Ce texte à une certaine taille');
         expect(result).toEqual(30);
-    });
+    }); 
 
     it('Remplacer le premier e de la chaine par un espace', function () {
         var result = remplaceCar('Ce texte à une certaine taille','e', ' ');
